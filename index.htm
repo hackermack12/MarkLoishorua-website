@@ -1,0 +1,231 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <!--UTF-8 covers almost all of the characters and symbols in the world!-->
+        <meta name="author" content="Mark Loishorua">
+     <title>My first web page</title>
+     <!--one enters internal css in the head--> 
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Young+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Roboto&family=Young+Serif&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 1.3rem;
+        }
+        
+        body{
+            background: #333;
+            color: whitesmoke;
+            background-size: auto;
+            background-image: url(./images/joey-kyber.jpg);
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+       .container h1{
+            font-family: 'Roboto', sans-serif;
+            text-shadow: 2px 3px 6px rgb(180, 180, 180);
+            font-weight: bolder;
+            z-index: 1;
+            margin-top: 0px;
+           position: relative;
+            margin-bottom: 29px;
+
+        }
+        nav .button{
+            margin-top:24px ;
+            padding: 7px 13px;
+            border-radius: 15px;
+            margin-left: 45px;
+        }
+        .container{
+            margin-bottom: 0px;
+           /* background-image: linear-gradient(to right, #000,#ffffff6e);*/
+           padding-bottom: 20px;
+        }
+        p{
+            font-family: 'Young Serif', serif; color: papayawhip;      }
+   
+       ol{
+        display: block;
+        display: grid;
+        grid-template-rows: 4fr 4fr 4fr 3fr;
+        gap: 30px 50px;
+        margin-left: 70px;
+        margin-right: 80px;
+        list-style-type: none;
+        }
+        h1{
+        margin-right: 30px;
+        margin-left: 40px;
+        margin-top: 15px;
+        }
+       .unique{
+        text-align: center;
+        background-image: linear-gradient(to right, #000,#ffffff6e);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        }
+       .footer{
+        display: block;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-auto-rows: auto;
+        background-image: linear-gradient(to right, #000,#ffffff6e);
+        color: #fff;
+        padding: 10px;
+        /*position: fixed;*/
+        bottom: 0;
+        margin-top: 0px;
+        }
+  
+       .link:hover{
+        color: papayawhip;
+        }
+        .button:hover{
+        color: slateblue;
+        }
+
+       li a.link{
+        text-decoration: none;
+        color: #fff;
+        }
+        .container h1 .web{
+           color: blue;
+        }
+        .wrap{
+            display: grid;
+            grid-template-columns: 12fr 12fr;
+            grid-auto-rows: auto;
+            gap: 50px 0px;
+            background-image: linear-gradient(to right, #000,#ffffff6e);
+            padding-bottom: 0px;
+            margin-bottom: 0 !important;
+        }
+        /*
+        .img{
+            height: 400px;
+            width: 700px;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0;
+        }
+        .figure{
+            padding-left:0;
+        }
+        .crystal{
+            padding: 0;
+            height: 410px;
+           width: 710px;
+        }*/
+        .blank{
+            height: 400px;
+            width: 100%;
+           background-image: linear-gradient(to right, #000,#ffffff6e);
+           margin-top:0px;
+           padding-left:0px;
+           padding-right: 0px;
+        }
+        .wrap.details{
+            height:200px ;
+            margin-bottom: 0px;
+            padding-top:0;
+
+        }
+        .blank img{
+            height: 100%;
+            width: -100%;
+            margin-left: 0;
+            margin: 0;
+        }
+
+
+
+       </style>
+       </head>
+
+        <body>
+            <div class="wrap">
+                <div class="container">
+                    <nav>
+                        <h1>Mark <span class="web">Website</span>  </h1>
+                        <ol>
+                            <li><a href="#" class="link">Start</a></li>
+                            <li> <a href="#"class="link" >Know</a></li>
+                            <li> <a href="#"class="link">Understand</a></li>
+                            <li><a href="#"class="link">find</a></li>
+                        </ol>
+                        <button class="button">Learn More</button>
+                    </nav>
+                </div>
+                <div class="details">
+                    <section class="unique"> 
+                        <h1>Mark Topoika</h1> 
+                        <p>This is my first web ~page &#9757;</p>
+                        <!--we use the markup validation service to ensure there is no error in the code-->
+                        <p>I have core understanding of html and css</p>
+                        <p> A web applicationist</p>
+                        <div>
+                        </section>
+                </div>
+
+            </div>
+               <!--<div class="crystal">
+                <figure class="fig">
+                    <img class="img" src="images/nicole-avagliano-TeLjs2pL5fA-unsplash.jpg" alt="avatar" height="300px" width="450px">
+                    <figcaption>“Crystals are like little rays of sunshine, nourishing our hearts and souls with their radiant energy."</figcaption>
+                </figure>-->
+
+       
+                <div class="blank">
+                     <!-- <h1>Mark Topoika</h1> -->
+                    <img src="images/christian-buehner-DItYlc26zVI-unsplash.jpg" alt="avatar">
+                    <img src="images/foto-sushi-6anudmpILw4-unsplash.jpg" alt="avatar">
+                    <!--<p>This is my first web ~page &#9757;</p>
+                    we use the markup validation service to ensure there is no error in the code
+                    <p>I have core understanding of html and css</p>
+                    <p> A web applicationist</p>-->
+                </div>
+        <!-- <code>
+            x = 13;
+            y = 21;
+            t = x + y;
+        </code>
+        <div>
+        <pre><code>x = 5;     y=8;     z=x*y;</code></pre>
+            <p>save by pressing <kbd>Ctrl + S</kbd></p>
+        </div>
+        <div><p>Message from my computer:</p>
+            <p><samp>File not found.Press F1 to continue</samp></p></div>
+            <p> <span class="spam"> <b>Html 5 </b></span> is the foundation of <samp>programming</samp></p>
+            <strong> <samp>area </samp>is <samp>1/2x<var>b</var>x<var>h</var></samp> </strong> -->
+   
+        <div class="footer">
+            <div>
+                <p>About me</p>
+                <p>Technology view</p>
+                <p>My work</p>
+                <p>Passions</p>
+            </div>
+            <div>
+                <p>MKU spotlight</p>
+                <p>Resources</p>
+                <p>Clubs</p>
+                <p>M&B</p>
+            </div>
+            <div>
+                <p>Starters program</p>
+                <p>Articles</p>
+                <p>News</p>
+                <p>GDSC</p>
+            </div>
+        </div>
+
+      </body>
+</html>
